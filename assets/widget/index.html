@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	<script type="text/javascript">
+	
+	function play2() {
+		var data = {
+			type:2,
+			bgColor:'#ffffff',
+			popMenuItems:[
+				{text:'chat', img:'res://chat.png', textColor:'#ff00ff'},
+				{text:'clock', img:'res://clock.png', textColor:'#ff00ff'},
+				{text:'delete', img:'res://delete.png', textColor:'#ff00ff'},
+				{text:'music', img:'res://music.png', textColor:'#ff00ff'},
+				{text:'photo', img:'res://photo.png', textColor:'#ff00ff'},
+				{text:'video', img:'res://video.png', textColor:'#ff00ff'}
+			]
+		};
+		uexPopEffectMenu.setItems(JSON.stringify(data));	
+	
+		var wid = window.screen.width;
+		var hei = window.screen.height - 200;
+		var param = {
+			x:200,
+			y:0,
+			w:wid,
+			h:hei
+		};
+		uexPopEffectMenu.open(JSON.stringify(param));
+	}
+
+	function play1() {
+		var data = {
+			type:1,
+			popMenuItems:[
+				{text:'chat', img:'res://chat.png', textColor:'#ff00ff'},
+				{text:'clock', img:'res://clock.png', textColor:'#ff00ff'},
+				{text:'delete', img:'res://delete.png', textColor:'#ff00ff'},
+				{text:'music', img:'res://music.png', textColor:'#ff00ff'},
+				{text:'photo', img:'res://photo.png', textColor:'#ff00ff'},
+				{text:'video', img:'res://video.png', textColor:'#ff00ff'}
+			]
+		};
+		uexPopEffectMenu.setItems(JSON.stringify(data));	
+	
+		var wid = window.screen.width;
+		var hei = window.screen.height - 200;
+		var param = {
+			x:200,
+			y:0,
+			w:wid,
+			h:hei
+		};
+		uexPopEffectMenu.open(JSON.stringify(param));
+	}
+
+	window.uexOnload = function(){
+	
+		uexPopEffectMenu.onItemClick = function(index) {
+			alert(index);
+		}
+	}
+	
+</script>
+</head>
+
+<body>
+	<div class="tit">uexPopEffectMenu</div>
+	<div class="conbor">
+		<div class="consj">
+			<input type="button" value="方式一" onclick=play1()>
+			<input type="button" value="方式二" onclick=play2()>
+		</div>
+	</div>
+</body>
+</html>

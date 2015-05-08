@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uexplugins>
+    <plugin uexName="uexPopEffectMenu" version="3.0.3" build="3">
+		<info>3:机型适配</info>
+		<build>2:修复点击图标间的空白区域，会弹出alert提示框的问题</build>
+        <build>1:添加点击空白处关闭菜单的功能</build>
+		<build>0:弹出效果菜单</build>
+    </plugin>
+</uexplugins>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+	<plugin
+        className="org.zywx.wbpalmstar.widgetone.uexpopeffectmenu.EUExPopEffectMenu" uexName="uexPopEffectMenu" >
+        <method name="open" />
+        <method name="setItems"/>
+    </plugin>
+</uexplugins>
